@@ -40,7 +40,10 @@ const Navbar: React.FC = () => (
           <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse shadow-[0_0_8px_#4ade80]"></div>
           SYSTEM ONLINE
         </div>
-        <button className="px-4 py-1.5 bg-white text-black font-mono text-xs font-bold hover:bg-cyan-500 hover:text-white transition-colors flex items-center gap-2 shadow-lg">
+        <button
+          onClick={() => window.location.href = "https://solvx-viewer.vercel.app/"}
+          className="px-4 py-1.5 bg-white text-black font-mono text-xs font-bold hover:bg-cyan-500 hover:text-white transition-colors flex items-center gap-2 shadow-lg"
+        >
           LAUNCH VIEWER <ArrowRight size={14} />
         </button>
       </div>
@@ -65,9 +68,12 @@ const Hero: React.FC = () => (
           A browser-based platform that brings ocean model predictions and real-world observations together across location, depth and time.
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="px-6 py-3.5 bg-cyan-600/90 backdrop-blur-sm text-white font-mono text-sm hover:bg-cyan-500 transition-colors flex items-center justify-center gap-2 font-bold shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] border border-cyan-400/50 rounded-sm">
-            LAUNCH EXPLORER <ChevronRight size={16} />
-          </button>
+        <button
+          onClick={() => window.location.href = "https://solvx-viewer.vercel.app/"}
+          className="px-6 py-3.5 bg-cyan-600/90 backdrop-blur-sm text-white font-mono text-sm hover:bg-cyan-500 transition-colors flex items-center justify-center gap-2 font-bold shadow-[0_0_20px_rgba(6,182,212,0.5)] hover:shadow-[0_0_30px_rgba(6,182,212,0.8)] border border-cyan-400/50 rounded-sm"
+        >
+          LAUNCH EXPLORER <ChevronRight size={16} />
+        </button>
         </div>
       </div>
       
